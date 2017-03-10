@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/background2"
+    tools:context="com.example.zahra.familydrugs_blue.SignUp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ProfileTop"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:id="@id/imageView"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:inputType="text"
+                android:text="Username:"
+                android:ems="10"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/usernamet"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="name"
+                android:ems="10"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Username"
+                android:layout_below="@+id/imageView"
+                android:background="@drawable/DrugName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:textColor="@android:color/darker_gray" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:inputType="text"
+                android:text="Allergy:"
+                android:ems="10"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/Allergyt"
+                android:layout_below="@+id/Username"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Allergy"
+                android:layout_below="@+id/Allergyt"
+                android:background="@drawable/Rectangle"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                tools:listheader="Allergy">
+
+            <TextView
+                android:text="Birth Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_below="@+id/Allergy"
+
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" />
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:id="@+id/datePicker"
+                android:layout_below="@+id/textView"
+
+                android:calendarTextColor="@android:color/darker_gray"
+                android:calendarViewShown="false"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/Add"
+                android:id="@+id/add"
+                android:layout_below="@+id/datePicker"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp" />>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

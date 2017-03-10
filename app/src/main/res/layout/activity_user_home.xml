@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/background2"
+    tools:context="com.example.zahra.familydrugs_blue.SignUp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/TOP"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:id="@id/Top"/>
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/Top"
+        android:background="@drawable/DrugsPlace"
+        android:id="@+id/flipper"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flipper"
+        android:id="@+id/searchfor"
+        android:background="@drawable/bluesearch"
+        android:layout_marginTop="3dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchfor"
+        android:id="@+id/profile"
+        android:background="@drawable/redpersonal"
+        android:layout_marginTop="3dp" />
+
+
+    </LinearLayout>
